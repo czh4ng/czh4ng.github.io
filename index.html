@@ -6,43 +6,76 @@
     <title>Chun's Academic Homepage</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
-        header, footer {
-            background-color: #f8f8f8;
-            padding: 10px 0;
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
         }
         .container {
             width: 80%;
-            margin: 0 auto;
+            margin: 20px auto;
+            overflow: hidden;
         }
         .profile {
             display: flex;
             align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         .profile img {
             border-radius: 50%;
             margin-right: 20px;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 10px;
+            border: 3px solid #333;
         }
         nav ul {
-            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            margin: 0;
         }
         nav ul li {
             display: inline;
-            margin-right: 20px;
         }
-        nav a {
+        nav ul li a {
             color: white;
+            padding: 14px 16px;
             text-decoration: none;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #555;
         }
         section {
+            background-color: #fff;
+            padding: 20px;
             margin-bottom: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        a {
+            color: #333;
+        }
+        a:hover {
+            color: #017572;
         }
     </style>
 </head>
@@ -50,19 +83,22 @@
 
 <header>
     <div class="container">
-        <h1>Long may the sunshine.</h1>
+        <h1>Chun Zhang's Academic Journey</h1>
     </div>
 </header>
 
-<!-- <nav>
+<nav>
     <div class="container">
         <ul>
-            <li><a href="home">Home</a></li>
-            <li><a href="research">Research</a></li>
-            <li><a href="publications">Publications</a></li>
+            <li><a href="#home">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#conferences">Conferences</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#skills">Skills</a></li>
         </ul>
     </div>
-</nav> -->
+</nav>
 
 <main class="container">
     <section id="nav"></section>
@@ -156,7 +192,7 @@
 
 <footer>
     <div class="container">
-        <p>© 2023 Chun Zhang </p>
+        <p>© 2023 Chun Zhang. All rights reserved.</p>
     </div>
 </footer>
 
